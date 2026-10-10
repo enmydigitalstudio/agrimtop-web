@@ -1,0 +1,31 @@
+AGRIMTOP — DEMO WEB | ENMY DIGITAL STUDIO
+=========================================
+
+Archivos:
+- index.html: página web
+- styles.css: diseño y adaptación a celulares
+- script.js: menú y formulario de cotización por WhatsApp
+- assets/: logo oficial y dos fotos originales optimizadas
+
+CÓMO VERLA:
+1. Extrae la carpeta del ZIP.
+2. Abre index.html en Chrome/Edge, o en VS Code usa Live Server.
+3. Prueba el menú desde el celular y el formulario.
+
+CÓMO PUBLICAR EN GITHUB PAGES:
+1. Crea un repositorio público llamado agrimtop-demo.
+2. Sube index.html, styles.css, script.js y la carpeta assets (sin cambiar la estructura).
+3. Ve a Settings > Pages > Build and deployment > Deploy from a branch.
+4. Elige main y /(root), guarda y espera la publicación.
+5. Normalmente quedará en https://enmydigitalstudio.github.io/agrimtop-demo/
+   (confirmar siempre la URL exacta que GitHub muestre).
+
+IMPORTANTE ANTES DE PUBLICAR:
+- Solicitar a Anderson permiso para publicar las fotos y el logotipo si falta.
+- Confirmar la redacción exacta de los servicios y procesos ofrecidos.
+- El formulario no almacena datos y solo prepara el mensaje en WhatsApp.
+- Todos los enlaces de contacto van a 809-478-5823 y @agrimtopgutz.
+- La página no incluye testimonios, proyectos o licencias inventadas.
+- Es una demo inicial que Anderson puede revisar antes de aprobarla.
+
+Enmy Digital Studio | Versión demo 1.0
