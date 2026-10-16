@@ -463,3 +463,26 @@ body.gallery-opened{overflow:hidden}
   .field-video-eyebrow{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.quote-arrow{transition:none}.hero-actions .button:hover .quote-arrow,.hero-actions .button:focus-visible .quote-arrow{transform:none}}
+
+/* Iconos vectoriales de interfaz: sin caracteres emoji ni fuentes de símbolos. */
+.ui-icon{display:inline-block;width:18px;height:18px;vertical-align:middle;flex-shrink:0;color:var(--green);background:none;border:0;box-shadow:none}
+.ui-arrow{transition:transform .2s ease}
+.notice-bar .ui-icon,.nav-cta .ui-icon,.hero .ui-icon,.quote-info .ui-icon,.button-dark .ui-icon{color:var(--gold-light)}
+.hero .button-gold .ui-icon,.button-gold .ui-icon,.quote-form .ui-icon{color:var(--green)}
+.ribbon-symbol{display:grid;place-items:center;flex-shrink:0}
+.ribbon-symbol .ui-icon{width:20px;height:20px;color:var(--green)}
+.meta-icon{display:inline-flex;align-items:center}
+.service-body>a span,.service-body>a:hover span{background:transparent;color:var(--green)}
+.quote-contact-icon .ui-icon,.gallery-dialog .ui-icon{color:var(--gold-light)}
+.contact-links .ui-icon{width:16px;height:16px}
+.form-note>.ui-icon{margin-top:2px}
+.form-feedback a>.ui-icon{margin-left:5px}
+@media(hover:hover){
+  a:hover>.ui-arrow,a:hover>span>.ui-arrow,button:hover>.ui-arrow,button:hover>span>.ui-arrow,.hero-actions .button:hover .quote-arrow{transform:translate(1px,-1px)}
+  .button:has(.ui-arrow):hover{transform:none}
+}
+.hero-actions .button:focus-visible .quote-arrow{transform:none}
+@media(prefers-reduced-motion:reduce){
+  .ui-arrow{transition:none}
+  a:hover>.ui-arrow,a:hover>span>.ui-arrow,button:hover>.ui-arrow,button:hover>span>.ui-arrow,.hero-actions .button:hover .quote-arrow{transform:none}
+}

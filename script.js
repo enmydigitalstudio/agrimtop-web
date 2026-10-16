@@ -66,7 +66,18 @@
         anchor.href = url;
         anchor.target = '_blank';
         anchor.rel = 'noopener noreferrer';
-        anchor.textContent = 'Abrir WhatsApp para enviar mi solicitud ↗';
+        anchor.textContent = 'Abrir WhatsApp para enviar mi solicitud ';
+        const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        const arrowPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        Object.entries({
+          class: 'ui-icon ui-arrow', width: '18', height: '18',
+          viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor',
+          'stroke-width': '1.5', 'stroke-linecap': 'round',
+          'stroke-linejoin': 'round', 'aria-hidden': 'true', focusable: 'false'
+        }).forEach(([name, value]) => arrow.setAttribute(name, value));
+        arrowPath.setAttribute('d', 'M6 18 18 6M6 6h12v12');
+        arrow.append(arrowPath);
+        anchor.append(arrow);
         feedback.append('El navegador bloqueó la pestaña. ', anchor);
       }
     } else if (feedback) {
