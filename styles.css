@@ -439,3 +439,27 @@ body.gallery-opened{overflow:hidden}
   .technical-motion.is-playing .tech-trace,.technical-motion.is-playing .tech-rise{animation:none;stroke-dashoffset:0;opacity:1;transform:none}
   .technical-motion.is-playing .tech-retire{animation:none;opacity:0}
 }
+
+/* Actualización de fotografías originales y video de campo. */
+.about-image-block.about-mountains{height:auto;aspect-ratio:1484 / 1600}
+.about-mountains>img{width:100%;height:100%;object-fit:contain;object-position:center}
+.quote-arrow{width:20px;height:20px;flex-shrink:0;color:var(--green);transition:transform .25s ease}
+.hero-actions .button:hover .quote-arrow,.hero-actions .button:focus-visible .quote-arrow{transform:translate(2px,-2px)}
+.gallery-premium .gallery-video{grid-column:1 / -1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--green-deep);border:1px solid #53674e;border-radius:14px;overflow:hidden;min-width:0}
+.gallery-premium .gallery-card.gallery-video .gallery-video-frame{height:auto;min-height:0;padding:24px;margin:0;border:0;border-radius:0;background:#102923;cursor:default;box-shadow:none}
+.gallery-video video{display:block;width:min(100%,260px);height:auto;aspect-ratio:480 / 854;max-width:100%;object-fit:contain;background:#0b211e;border-radius:6px;color:white}
+.gallery-premium .gallery-video figcaption{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:20px;padding:36px;margin:0;border:0}
+.gallery-premium .gallery-video figcaption strong{font-family:var(--font-head);font-size:clamp(28px,3vw,40px);line-height:1.2;letter-spacing:-.03em;color:#fffdf8;font-weight:500;margin:0}
+.field-video-eyebrow{color:var(--gold-light);font-family:var(--font-ui);font-size:9px;font-weight:700;letter-spacing:.13em;line-height:1.8}
+.gallery-video figcaption p{color:#d0dcd2;font-size:14px;line-height:1.85;margin:0;max-width:340px}
+.field-video-note{color:#b7c9bd;font-size:11px;line-height:1.7}
+.gallery-video video:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media(max-width:600px){
+  .gallery-premium .gallery-video{grid-template-columns:minmax(0,1fr)}
+  .gallery-premium .gallery-card.gallery-video .gallery-video-frame{height:auto;padding:18px}
+  .gallery-video video{width:min(100%,300px)}
+  .gallery-premium .gallery-video figcaption{padding:24px;gap:14px}
+  .gallery-premium .gallery-video figcaption strong{font-size:30px}
+  .field-video-eyebrow{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.quote-arrow{transition:none}.hero-actions .button:hover .quote-arrow,.hero-actions .button:focus-visible .quote-arrow{transform:none}}
